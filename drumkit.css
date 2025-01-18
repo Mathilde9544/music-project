@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(108, 108, 228);
+  text-align: center;
+}
+
+.main-container {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 100px;
+}
+
+.notes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  color: rgb(234, 234, 251);
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.173);
+}
+
+.note h2, .note p{
+  margin: 0;
+}
+
+.note p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgba(23, 14, 188, 0.725);
+}
+
+.note:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.534);
+  color: rgb(87, 87, 221);
+  transition: 0.2s ease;
+}
+
+.note.playing {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.534);
+  color: rgb(87, 87, 221);
+  transition: 0.2s ease;
+}
